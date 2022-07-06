@@ -1,4 +1,4 @@
-package homeworks.hw_1_arrays_numbers;
+package homeworks.hw_1_arrays;
 
 import java.util.Random;
 import java.util.Scanner;
