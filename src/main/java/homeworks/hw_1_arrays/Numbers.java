@@ -89,7 +89,7 @@ public class Numbers {
         String question;
         int answer;
         int guess;
-        int index = rand.nextInt(data[0].length + 1);
+        int index = rand.nextInt(data[0].length);
 
 
         System.out.println("Let the game begin!");
