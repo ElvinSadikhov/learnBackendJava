@@ -37,14 +37,9 @@ public class Pet {
     void foul() {
         System.out.println("I need to cover it up");
     }
-
+    @Override
     public String toString() {
-        return this.species + "{nickname=" + this.nickname + ", age=" + this.age + ", trickLevel=" + this.trickLevel + ", habits=" + Arrays.toString(this.habits);
+        return this.species + "{nickname='" + this.nickname + "', age=" + this.age + ", trickLevel=" + this.trickLevel + ", habits=" + Arrays.toString(this.habits) + "}";
     }
-
-//    public static void main(String[] args) {
-//        Pet pet = new Pet("cat", "nazim", 12, 15, new String[]{"bla", "blah"});
-//        System.out.println(pet);
-//    }
 
 }

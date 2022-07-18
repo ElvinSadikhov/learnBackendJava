@@ -47,9 +47,9 @@ public class Human {
         System.out.printf("I have a %s, he is %d years old, he is %s\n",
                 this.pet.species, this.pet.age, this.pet.trickLevel > 50 ? "very sly" : "almost not sly");
     }
-
+    @Override
     public String toString(){
-        return "Human{name=" + this.name + ", surname=" + this.surname + ", year=" + this.year + ", iq=" + this.iq + ", mother=" + this.mother.name + " " + this.mother.surname + ", father=" + this.father.name + " " + this.father.surname +", " + this.pet + "}";
+        return "Human{name='" + this.name + "', surname='" + this.surname + "', year=" + this.year + ", iq=" + this.iq + ", mother='" + (this.mother != null ? this.mother.name + " " + this.mother.surname : "null") + "', father='" + (this.father != null ? this.father.name + " " + this.father.surname : "null") +"', pet=" + this.pet + "}";
     }
 
 }
