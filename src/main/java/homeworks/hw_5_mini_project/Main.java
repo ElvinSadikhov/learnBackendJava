@@ -1,9 +1,11 @@
 package homeworks.hw_5_mini_project;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        String schedule[][] = {{"monday", "sunday"}, {"work", "gym"}};
+        String schedule[][] = {{"monday", "work"}, {"sunday", "gym"}};
 
         Pet dog = new Pet("dog", "muxtar", 2, 35, new String[]{"eating", "playing"});
         dog.est();
@@ -26,16 +28,17 @@ public class Main {
 
         Human arzu = new Human();
         Human faiq = new Human("Faiq", "Zamanov", 1965);
-        Human elvin = new Human("ELvin", "Sadikhov", 2003, 200, dog, arzu, faiq, schedule);
-        Human zehra = new Human("Zehra", "Abdullayeva", 1965, arzu, faiq);
+        Human zehra = new Human("Zehra", "Abdullayeva", 1965);
 
-        elvin.greetPet();
-        elvin.describePet();
 
         System.out.println(arzu);
         System.out.println(faiq);
-        System.out.println(elvin);
         System.out.println(zehra);
+
+        Family fam = new Family(new Human("Gulu", "Wekerova", 1993), new Human("Elvin", "Sadixov", 1993));
+        fam.addChild(zehra);
+        fam.addChild(faiq);
+        System.out.println(fam);
     }
 
 }
